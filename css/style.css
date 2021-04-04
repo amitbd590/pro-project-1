@@ -271,11 +271,13 @@ form * {
     z-index: 1;
     position: relative;
 }
+
 #summary {
     background-image: url(../img/pexels-expect-best-323780.jpg);
     position: relative;
     z-index: 10;
 }
+
 #summary::after {
     content: "";
     background-color: rgb(56 56 56 / 88%);
@@ -327,7 +329,7 @@ form * {
     margin-bottom: 125px;
 }
 
-#summary .container .block-2 .col-1 {
+#summary .container .block-2 .col1 {
     background-color: #ddd;
     border-radius: 7px;
     opacity: .8;
@@ -335,7 +337,7 @@ form * {
     height: 260px;
 }
 
-#summary .container .block-2 .col-1:hover {
+#summary .container .block-2 .col1:hover {
     opacity: 1;
 }
 
@@ -504,6 +506,7 @@ form * {
 
 #summary-2 {
     background-image: url(../img/teen.jpg);
+    background-repeat: no-repeat;
 }
 
 #summary-2 .container {
@@ -544,7 +547,7 @@ form * {
     margin-bottom: 125px;
 }
 
-#summary-2 .container .block-2 .col-1 {
+#summary-2 .container .block-2 .col1 {
     background-color: #47454a;
     border-radius: 7px;
     padding: 34px;
@@ -628,11 +631,13 @@ form * {
     display: inline-block;
     font-size: 13px;
 }
-#summary-3 .part-2 .card{
+
+#summary-3 .part-2 .card {
     position: relative;
     z-index: 3;
-    
+
 }
+
 #summary-3 .part-2 .card img {
     opacity: 1;
     display: block;
@@ -641,10 +646,12 @@ form * {
     transition: .5s ease;
     backface-visibility: hidden;
 }
-#summary-3 .part-2 .card:hover img{
+
+#summary-3 .part-2 .card:hover img {
     opacity: .3;
 }
-#summary-3 .part-2 .card .middle{
+
+#summary-3 .part-2 .card .middle {
     transition: .5s ease;
     opacity: 0;
     position: absolute;
@@ -654,7 +661,8 @@ form * {
     -ms-transform: translate(-50%, -50%);
     text-align: center;
 }
-#summary-3 .part-2 .card:hover .middle{
+
+#summary-3 .part-2 .card:hover .middle {
     opacity: 1;
 }
 
@@ -663,7 +671,7 @@ form * {
 /*  */
 #show-bar .card {
     position: relative;
-   
+
 }
 
 #show-bar .card .image {
@@ -689,75 +697,263 @@ form * {
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     text-align: center;
-    
+
 }
 
 #show-bar .card:hover .middle {
     opacity: 1;
-    
+
 }
 
 /* Footer Section */
 
-#footer{
+#footer {
     background-color: rgb(0, 0, 0);
 }
-#footer .part-1{
+
+#footer .part-1 {
     background-color: rgb(0, 0, 0);
     border-bottom: 1px solid #ddd;
 }
-#footer .part-1 h2{
+
+#footer .part-1 h2 {
     font-size: 60px;
 }
-#footer .part-1 h2{
+
+#footer .part-1 h2 {
     font-size: 60px;
     color: #ddd;
 }
-#footer .part-1 .fab{
+
+#footer .part-1 .fab {
     font-size: 30px;
     padding-right: 15px;
 }
-#footer .part-1 .fab:hover{
+
+#footer .part-1 .fab:hover {
     color: rgb(0, 255, 55);
 }
-#footer .part-1 h3{
+
+#footer .part-1 h3 {
     font-size: 15px;
     color: #ddd;
     padding-top: 35px;
     padding-bottom: 47px;
 }
-#footer .part-2{
+
+#footer .part-2 {
     margin: auto;
 }
-#footer .part-2 h2{
+
+#footer .part-2 h2 {
     font-size: 20px;
     font-weight: bold;
     color: #ddd;
 }
-#footer .part-2 p{
+
+#footer .part-2 p {
     font-size: 14px;
     color: #ddd;
 }
-#footer .part-2 .image img{
+
+#footer .part-2 .image img {
     width: 46%;
     padding: 2px;
 }
-#footer .part-2 a{
+
+#footer .part-2 a {
     color: #ddd;
     text-decoration: none;
 }
-#footer .part-3{
+
+#footer .part-3 {
     margin: auto;
 }
-#footer .part-3 p{
+
+#footer .part-3 p {
     text-align: center;
     font-size: 12px;
     color: #ddd;
+}
+#footer time {
     
-    
+    color: #ddd;
 }
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Query */
+@media screen and (max-width: 576px) {
+    #header #mid-header .col-6 {
+        max-width: 0;
+    }
+
+    .logo img {
+        margin: 0px 0px 0px 212px;
+    }
+
+    #nav .navbar {
+        margin-left: 20px;
+    }
+
+    #nav .navbar-toggler {
+        margin: 1px 0px 0px -56px;
+    }
+
+    #top-header {
+        display: table-footer-group;
+    }
+
+    #slider h2 {
+        font-size: 34px;
+    }
+
+    #slider p {
+        max-width: 100%;
+    }
+
+    #show-bar .col-md-4{
+        margin-bottom: 30px;
+    }
+
+    #show-bar .part-3 {
+        margin-bottom: 0px;
+    }
+
+    #meet-bar .head-bar {
+        margin-top: 54px;
+    }
+
+    #meet-bar .col-md-4 {
+        padding: 10px 0;
+    }
+
+    #meet-bar .button .btn {
+        margin-bottom: 47px;
+    }
+
+    #summary .container {
+        margin: 0px 0px;
+    }
+
+    #summary .container .block-2 .col1 {
+        height: 280px;
+    }
+
+    #summary .container .block-2 h2 {
+        line-height: 33px;
+    }
+
+    #summary .container .block-2 {
+        margin-bottom: 81px;
+    }
+
+    #summary .container .block-2 a {
+        margin-top: 16px;
+        margin-left: 28%;
+    }
+
+    #meet-bar-2 .row {
+        margin: 13px 0;
+    }
+
+    #meet-bar-2 .head-bar {
+        padding-bottom: 24px;
+    }
+
+    #meet-bar-2 .col-md-4 {
+        padding: 15px 0;
+    }
+
+    #meet-bar-3 {
+        margin-top: 10px;
+    }
+
+    #meet-bar-3 .head-bar h2 {
+        font-size: 27px;
+    }
+
+    #meet-bar-3 .part-2 .bar {
+        top: 21px;
+    }
+
+    #meet-bar-3 .part-2 {
+        margin-bottom: 88px;
+    }
+
+    #summary-2 .container {
+        margin: 0px 0px;
+    }
+
+    #summary-2 .container .block-2 .col1 {
+        border-radius: 7px;
+        padding: 14px;
+        height: 314px;
+    }
+
+    #summary-2 .container .block-1 {
+        margin: 0px 0px;
+    }
+    #summary-2 .container p {
+        margin-top: 47px;
+    }
+    #summary-2 .container .block-1 h2 {
+        font-size: 23px;
+        line-height: 52px;
+    }
+    #summary-2 .container .block-2 h2 {
+        color: rgb(255, 255, 255);
+        font-size: 22px;
+        line-height: 35px;
+    }
+
+    #summary-3 .row {
+        margin: 0px 0;
+    }
+
+    #summary-3 .part-2 .card  {
+        margin-bottom: 30px;
+    }
+    #summary-3 {
+        padding-bottom: 27px;
+    }
+    #footer .part-3{
+        margin-top: 30px;
+    }
+
+
+    
+
+}
+
+
+
+/* @media screen and (min-width: 577px) {
+    #header #mid-header .col-6{
+        max-width: 0;
+    }
+    .logo img {
+        margin: 0px 0px 0px 568px;
+    }
+    #nav .navbar {
+        margin-left: 20px;
+    }
+    #nav .navbar-toggler {
+        margin: 1px 0px 0px -56px;
+    }
+    
+  } */
