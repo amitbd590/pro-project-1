@@ -34,13 +34,11 @@ form * {
     margin: 0;
     padding: 0;
 }
-
 #header {
     background-image: url(../img/header.jpg);
     position: relative;
 
 }
-
 #header>* {
     z-index: 1;
     position: relative;
@@ -100,24 +98,35 @@ form * {
 
 /* Navbar */
 
-#nav .navbar {
+/* #nav .navbar {
     margin-left: 175px;
+    overflow: hidden;
+    background-color: rgba(187, 18, 18, 0.611);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+} */
+
+#nav .navbar{
+    margin-left: 200px;
 }
 
 #nav .dropdown-menu {
     background: #f9f9f9d1;
 }
-
-#nav .dropdown-menu .dropdown-item:hover {
-    background: #28A745;
+.dropdown-item:hover {
+    color: #16181b;
+    text-decoration: none;
+    background-color: #28a745;
 }
-
 
 /* Slider */
 
 #slider {
     min-height: 630px;
 }
+
 
 #slider .carousel-indicators {
     bottom: -63px;
@@ -275,7 +284,7 @@ form * {
 #summary {
     background-image: url(../img/pexels-expect-best-323780.jpg);
     position: relative;
-    z-index: 10;
+    
 }
 
 #summary::after {
@@ -775,12 +784,41 @@ form * {
     font-size: 12px;
     color: #ddd;
 }
+
 #footer time {
-    
+
     color: #ddd;
 }
 
-
+/* Back to Top */
+#backtotop{
+    z-index:999; 
+    display:inline-block; 
+    position:fixed; 
+    visibility:hidden;
+    bottom:20px; 
+    right:20px; 
+    width:36px; 
+    height:36px; 
+    line-height:36px; 
+    font-size:16px; 
+    text-align:center; 
+    opacity:.8;
+}
+#backtotop i{display:block; 
+    width:100%; 
+    height:100%; 
+    line-height:inherit;
+}
+#backtotop.visible{visibility:visible; 
+    opacity:.5;
+}
+#backtotop:hover{
+    opacity:1;
+}
+#backtotop{
+    color:#FFFFFF; 
+    background-color:#00ff80;}
 
 
 
@@ -800,6 +838,10 @@ form * {
 @media screen and (max-width: 576px) {
     #header #mid-header .col-6 {
         max-width: 0;
+    }
+
+    #header #top-header .icon {
+        display: none;
     }
 
     .logo img {
@@ -826,7 +868,7 @@ form * {
         max-width: 100%;
     }
 
-    #show-bar .col-md-4{
+    #show-bar .col-md-4 {
         margin-bottom: 30px;
     }
 
@@ -908,13 +950,16 @@ form * {
     #summary-2 .container .block-1 {
         margin: 0px 0px;
     }
+
     #summary-2 .container p {
         margin-top: 47px;
     }
+
     #summary-2 .container .block-1 h2 {
         font-size: 23px;
         line-height: 52px;
     }
+
     #summary-2 .container .block-2 h2 {
         color: rgb(255, 255, 255);
         font-size: 22px;
@@ -925,18 +970,20 @@ form * {
         margin: 0px 0;
     }
 
-    #summary-3 .part-2 .card  {
+    #summary-3 .part-2 .card {
         margin-bottom: 30px;
     }
+
     #summary-3 {
         padding-bottom: 27px;
     }
-    #footer .part-3{
+
+    #footer .part-3 {
         margin-top: 30px;
     }
 
 
-    
+
 
 }
 
